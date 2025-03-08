@@ -151,8 +151,11 @@ document.getElementById("signup-form").addEventListener("submit", function(event
     let formData = new FormData(this);
 
     fetch("https://script.google.com/macros/s/AKfycbwcAUtKD4aNxEihHPxjRTuT9AaoxjGTHmSbI0axq0Gal_WtGUoh9us9RniihUc_5_ly/exec", {
-        method: "POST",
-        body: formData
+    method: "POST",
+    mode: "no-cors", // Tämä estää CORS-virheen
+    body: formData
+})
+
     })
     .then(response => response.text())
     .then(data => {
