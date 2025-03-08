@@ -29,13 +29,13 @@
             font-family: 'Poppins', sans-serif;
             font-size: 28px;
             font-weight: 700;
-            color: #2E7D32;
+            color: #2E7D32; /* Tumma vihreä */
             margin-bottom: 20px;
         }
         .webinar-info {
             font-size: 18px;
             margin-bottom: 20px;
-            color: #388E3C;
+            color: #388E3C; /* Pehmeä vihreä */
             font-weight: bold;
         }
         .text-content {
@@ -47,7 +47,7 @@
             max-width: 550px;
         }
         .highlight {
-            color: #4CAF50;
+            color: #4CAF50; /* Kirkas vihreä */
             font-weight: bold;
         }
         .form-group {
@@ -62,7 +62,7 @@
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(90deg, #66BB6A, #4CAF50);
+            background: linear-gradient(90deg, #66BB6A, #4CAF50); /* Vihreä liukuväri */
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             font-weight: bold;
@@ -74,13 +74,16 @@
             transition: all 0.3s ease-in-out;
             width: auto;
             min-width: 250px;
-            border: none;
-            cursor: pointer;
         }
         .cta-button:hover {
             background: linear-gradient(90deg, #4CAF50, #388E3C);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
+        }
+        .testimonials {
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
         }
         ul {
             text-align: left;
@@ -114,51 +117,38 @@
          alt="Joonaksen valmennus" 
          style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
+    <!-- Ongelma ja ratkaisu -->
     <p class="section-title">📉 <span class="highlight">Perinteinen asiakashankinta on rikki</span></p>
     <p class="text-content">
         Mainosten tehot <b>laskevat</b>, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.
     </p>
-    
-    <!-- Ilmoittautumislomake -->
-    <form id="signup-form">
-        <div class="form-group">
-            <input type="text" name="nimi" id="nimi" placeholder="Nimesi" required>
-        </div>
-        <div class="form-group">
-            <input type="email" name="sahkoposti" id="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
-        </div>
-        <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
-            <button type="submit" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</button>
-        </div>
-    </form>
+    <p class="section-title">🤖 <span class="highlight">Tekoäly muuttaa pelin täysin</span></p>
+    <p class="text-content">
+        AI tuo ostovalmiit asiakkaat <b>suoraan</b> sinun valmennukseesi <b>automaattisesti</b>.
+    </p>
+
+    <!-- Mitä opit -->
+    <p class="section-title">🎯 Mitä opit tässä maksuttomassa webinaarissa?</p>
+    <ul>
+        <li>💡 Miten <b>tekoäly tuo asiakkaita</b> valmennukseesi automaattisesti</li>
+        <li>📊 Miten <b>AI-optimointi</b> voi moninkertaistaa myyntisi</li>
+        <li>🤝 Miten <b>AI hoitaa myyntiprosessin</b> puolestasi</li>
+    </ul>
+
+    <!-- Kenelle tämä sopii -->
+    <p class="section-title">✅ Kenelle tämä sopii?</p>
+    <ul>
+        <li>🎤 Valmentajille & kouluttajille, jotka haluavat <b>enemmän asiakkaita</b></li>
+        <li>💼 Yrittäjille & asiantuntijoille, jotka haluavat <b>automaatiota</b></li>
+        <li>🔗 Kaikille, jotka haluavat <b>päästä eroon manuaalisesta myynnistä</b></li>
+    </ul>
+
+    <!-- Ilmoittautuminen -->
+    <div style="margin-top: 30px; margin-bottom: 30px;">
+        <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</a>
+    </div>
+
 </div>
-
-<!-- Lomakkeen lähetyksen JavaScript -->
-<script>
-    document.getElementById("signup-form").addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        var nimi = document.getElementById("nimi").value;
-        var sahkoposti = document.getElementById("sahkoposti").value;
-
-        var data = {
-            nimi: nimi,
-            sahkoposti: sahkoposti
-        };
-
-        fetch("https://script.google.com/macros/s/AKfycbzmfCH9L1loKoapG9nXjli5Qyxnl6YF7t40ooJTJe011MHV2t7Je1p5t_oqNcU7T6J4/exec", {
-            method: "POST",
-            mode: "no-cors",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        }).then(() => {
-            alert("Ilmoittautuminen vastaanotettu!");
-            document.getElementById("signup-form").reset();
-        }).catch(error => console.error("Virhe:", error));
-    });
-</script>
 
 </body>
 </html>
