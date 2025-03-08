@@ -3,71 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liidien keräys - Henri Rantanen Valmennus</title>
+    <title>Kasvata valmennusbisnestäsi tekoälyn avulla!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
         }
         .container {
             max-width: 600px;
-            margin: auto;
-            background: white;
+            margin: 50px auto;
             padding: 20px;
-            border-radius: 10px;
+            background-color: white;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 { color: #333; }
-        p { color: #666; }
-        .cta-btn {
-            display: inline-block;
-            padding: 15px 25px;
-            margin-top: 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .webinar-info {
             font-size: 18px;
+            margin-bottom: 20px;
         }
-        .cta-btn:hover { background: #0056b3; }
-        .form-container {
-            margin-top: 20px;
+        .form-group {
+            margin-bottom: 15px;
         }
-        input[type="text"], input[type="email"] {
-            width: 80%;
+        input {
+            width: 100%;
             padding: 10px;
-            margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 16px;
+        }
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
         }
         .testimonials {
-            margin-top: 30px;
-            font-style: italic;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Haluatko viedä valmennusbisneksesi uudelle tasolle?</h1>
-        <p>Ilmainen webinaari: "Miten kasvattaa asiakasmäärää tekoälyn avulla?"</p>
-        <img src="valmennus.jpg" alt="Valmennuskuva" width="100%">
-        
-        <div class="form-container">
-            <p>Ilmoittaudu nyt ja varmista paikkasi:</p>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Nimesi" required><br>
-                <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required><br>
-                <button type="submit" class="cta-btn">Varaa paikkasi nyt</button>
-            </form>
+
+<div class="container">
+    <h1>Haluatko 10 uutta asiakasta valmennukseesi tekoälyn avulla?</h1>
+    <p class="webinar-info">Ilmainen webinaari: "Miten kasvattaa asiakasmäärää tekoälyn avulla?"</p>
+    
+    <img src="kuva.jpg" alt="Joonaksen valmennus" style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
+
+    <p><strong>Mitä opit tässä maksuttomassa webinaarissa?</strong></p>
+    <ul style="text-align: left; display: inline-block;">
+        <li>Miten tekoäly tuo asiakkaita valmennukseesi automaattisesti</li>
+        <li>Miten AI-optimointi voi moninkertaistaa myyntisi</li>
+        <li>Miten saat AI:n hoitamaan myyntiprosessin puolestasi</li>
+    </ul>
+
+    <form>
+        <div class="form-group">
+            <input type="text" name="nimi" placeholder="Nimesi" required>
         </div>
-        
-        <div class="testimonials">
-            <p>"Henrin valmennuksen avulla sain ensimmäiset 10 asiakastani!" – Anna K.</p>
-            <p>"AI-strategia mullisti tapani tehdä myyntiä!" – Petri S.</p>
+        <div class="form-group">
+            <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
         </div>
-        <p><small>Lisätietoa? Ota yhteyttä: info@henrivalmennus.fi</small></p>
+        <button type="submit" class="cta-button">Ilmoittaudu maksuttomaan webinaariin nyt!</button>
+    </form>
+
+    <div class="testimonials">
+        <p>"Joonaksen valmennuksen avulla sain ensimmäiset 10 asiakastani!" – Anna K.</p>
+        <p>"AI-strategia mullisti tapani tehdä myyntiä!" – Petri S.</p>
     </div>
+
+    <p style="font-size: 12px; color: #888;">Lisätietoa? Ota yhteyttä: <a href="mailto:info@joonaksenvalmennus.fi">info@joonaksenvalmennus.fi</a></p>
+</div>
+
 </body>
 </html>
