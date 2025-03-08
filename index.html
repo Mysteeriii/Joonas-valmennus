@@ -144,23 +144,27 @@
     </ul>
 
     <!-- Ilmoittautuminen -->
+    
     <div style="margin-top: 30px; margin-bottom: 30px;">
         <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</a>
     </div>
-
-</div>
 <!-- Ilmoittautumislomake -->
-<form id="signup-form" style="margin-top: 20px;">
-    <div class="form-group">
-        <input type="text" name="nimi" placeholder="Nimesi" required>
-    </div>
-    <div class="form-group">
-        <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
-    </div>
-    <div style="text-align: center; margin-top: 20px;">
-        <button type="submit" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</button>
-    </div>
-</form>
+<div style="margin-top: 30px; text-align: center;">
+    <h2 class="section-title">📩 Ilmoittaudu maksuttomaan webinaariin</h2>
+    <p class="text-content">Syötä tietosi ja varmista paikkasi heti!</p>
+
+    <form id="signup-form">
+        <div class="form-group">
+            <input type="text" name="nimi" placeholder="Nimesi" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
+        </div>
+        <div style="margin-top: 20px;">
+            <button type="submit" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</button>
+        </div>
+    </form>
+</div>
 
 <!-- JavaScript käsittelemään lomakkeen lähetys -->
 <script>
@@ -181,6 +185,8 @@ document.getElementById("signup-form").addEventListener("submit", function(event
     .catch(error => console.error("Error:", error));
 });
 </script>
+
+</div>
 
 </body>
 </html>
