@@ -114,11 +114,32 @@
          alt="Joonaksen valmennus" 
          style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
+    <!-- Ongelma ja ratkaisu -->
     <p class="section-title">📉 <span class="highlight">Perinteinen asiakashankinta on rikki</span></p>
     <p class="text-content">
         Mainosten tehot <b>laskevat</b>, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.
     </p>
-    
+    <p class="section-title">🤖 <span class="highlight">Tekoäly muuttaa pelin täysin</span></p>
+    <p class="text-content">
+        AI tuo ostovalmiit asiakkaat <b>suoraan</b> sinun valmennukseesi <b>automaattisesti</b>.
+    </p>
+
+    <!-- Mitä opit -->
+    <p class="section-title">🎯 Mitä opit tässä maksuttomassa webinaarissa?</p>
+    <ul>
+        <li>💡 Miten <b>tekoäly tuo asiakkaita</b> valmennukseesi automaattisesti</li>
+        <li>📊 Miten <b>AI-optimointi</b> voi moninkertaistaa myyntisi</li>
+        <li>🤝 Miten <b>AI hoitaa myyntiprosessin</b> puolestasi</li>
+    </ul>
+
+    <!-- Kenelle tämä sopii -->
+    <p class="section-title">✅ Kenelle tämä sopii?</p>
+    <ul>
+        <li>🎤 Valmentajille & kouluttajille, jotka haluavat <b>enemmän asiakkaita</b></li>
+        <li>💼 Yrittäjille & asiantuntijoille, jotka haluavat <b>automaatiota</b></li>
+        <li>🔗 Kaikille, jotka haluavat <b>päästä eroon manuaalisesta myynnistä</b></li>
+    </ul>
+
     <!-- Ilmoittautumislomake -->
     <form id="signup-form">
         <div class="form-group">
@@ -141,22 +162,17 @@
         var nimi = document.getElementById("nimi").value;
         var sahkoposti = document.getElementById("sahkoposti").value;
 
-        var data = {
-            nimi: nimi,
-            sahkoposti: sahkoposti
-        };
+        var data = { nimi: nimi, sahkoposti: sahkoposti };
 
         fetch("https://script.google.com/macros/s/AKfycbzmfCH9L1loKoapG9nXjli5Qyxnl6YF7t40ooJTJe011MHV2t7Je1p5t_oqNcU7T6J4/exec", {
             method: "POST",
             mode: "no-cors",
-            headers: {
-                "Content-Type": "application/json"
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
         }).then(() => {
             alert("Ilmoittautuminen vastaanotettu!");
             document.getElementById("signup-form").reset();
-        }).catch(error => console.error("Virhe:", error));
+        });
     });
 </script>
 
