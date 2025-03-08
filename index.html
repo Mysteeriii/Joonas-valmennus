@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasvata valmennusbisnestäsi tekoälyn avulla!</title>
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    
     <style>
-        /* Yleiset tyylit */
         body {
             font-family: 'Poppins', sans-serif;
             text-align: center;
@@ -19,64 +15,54 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            color: #333;
         }
-
         .container {
             max-width: 600px;
             margin: 50px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-
-        /* Otsikot */
-        h1, h2 {
+        h1, .section-title {
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-        }
-
-        h1 {
             font-size: 28px;
-            color: #222;
+            font-weight: 700;
+            color: #2E7D32; /* Tumma vihreä */
+            margin-bottom: 20px;
         }
-
-        /* Värilliset otsikot */
-        .section-title {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .section-title.red {
-            color: #ff4b2b; /* Punainen */
-        }
-
-        .section-title.green {
-            color: #3D9970; /* Pehmeä vihreä */
-        }
-
-        /* Tekstin tyyli */
         .webinar-info {
             font-size: 18px;
             margin-bottom: 20px;
+            color: #388E3C; /* Pehmeä vihreä */
+            font-weight: bold;
         }
-
+        .text-content {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 550px;
+        }
+        .highlight {
+            color: #4CAF50; /* Kirkas vihreä */
+            font-weight: bold;
+        }
         .form-group {
             margin-bottom: 15px;
         }
-
         input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
         }
-
-        /* CTA-painike */
         .cta-button {
             display: inline-block;
-            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            background: linear-gradient(90deg, #66BB6A, #4CAF50); /* Vihreä liukuväri */
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             font-weight: bold;
@@ -89,24 +75,32 @@
             width: auto;
             min-width: 250px;
         }
-
         .cta-button:hover {
-            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+            background: linear-gradient(90deg, #4CAF50, #388E3C);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
         }
-
         .testimonials {
             font-size: 14px;
             color: #666;
             margin-top: 20px;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            padding: 0;
+            font-size: 16px;
+            color: #444;
+        }
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
+<!-- Logo -->
 <div style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
             text-align: center; z-index: 1000; background: white; 
             padding: 10px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
@@ -115,51 +109,45 @@
          style="width: 100px; height: auto;">
 </div>
 
-<!-- LÄNDÄRIN SISÄLTÖ -->
 <div class="container" style="padding-top: 90px;">
-    
-    <h1>Haluatko 10 uutta asiakasta valmennukseesi tekoälyn avulla?</h1>
-    <p class="webinar-info">Ilmainen webinaari: "Miten kasvattaa asiakasmäärää tekoälyn avulla?"</p>
-    
+    <h1>🌿 Kasvata valmennusbisnestäsi tekoälyn avulla!</h1>
+    <p class="webinar-info">Ilmainen webinaari: <span class="highlight">"Miten kasvattaa asiakasmäärää tekoälyn avulla?"</span></p>
+
     <img src="https://raw.githubusercontent.com/Mysteeriii/rantanen-valmennus/main/WhatsApp%20Image%202025-02-10%20at%2021.42.33.jpeg" 
          alt="Joonaksen valmennus" 
          style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
-    <h2 class="section-title red">🚀 Perinteinen asiakashankinta on rikki</h2>
-    <p>Mainosten tehot laskevat, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.</p>
-
-    <h2 class="section-title green">🤖 Tekoäly muuttaa pelin täysin</h2>
-    <p>AI tuo ostovalmiit asiakkaat suoraan sinun valmennukseesi automaattisesti.</p>
-
-    <h2><strong>Mitä opit tässä maksuttomassa webinaarissa?</strong></h2>
-    <ul style="text-align: left; display: inline-block;">
-        <li>Miten tekoäly tuo asiakkaita valmennukseesi automaattisesti</li>
-        <li>Miten AI-optimointi voi moninkertaistaa myyntisi</li>
-        <li>Miten saat AI:n hoitamaan myyntiprosessin puolestasi</li>
-    </ul>
-
-    <h2><strong>Kenelle tämä sopii?</strong></h2>
-    <ul style="text-align: left; display: inline-block;">
-        <li>Valmentajille & kouluttajille, jotka haluavat enemmän asiakkaita ja skaalautuvaa myyntiä</li>
-        <li>Yrittäjille & asiantuntijoille, jotka haluavat automatisoida asiakashankintansa</li>
-        <li>Kaikille, jotka haluavat päästä eroon manuaalisesta myyntityöstä</li>
-    </ul>
-
-    <form>
-        <div class="form-group">
-            <input type="text" name="nimi" placeholder="Nimesi" required>
-        </div>
-        <div class="form-group">
-            <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
-        </div>
-        <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
-            <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🔴 Ilmoittaudu maksuttomaan webinaariin nyt! 🔴</a>
-        </div>
-    </form>
-
-    <p style="font-size: 12px; color: #888;">Lisätietoa? Ota yhteyttä: 
-        <a href="mailto:info@joonaksenvalmennus.fi">info@joonaksenvalmennus.fi</a>
+    <!-- Ongelma ja ratkaisu -->
+    <p class="section-title">📉 <span class="highlight">Perinteinen asiakashankinta on rikki</span></p>
+    <p class="text-content">
+        Mainosten tehot <b>laskevat</b>, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.
     </p>
+    <p class="section-title">🤖 <span class="highlight">Tekoäly muuttaa pelin täysin</span></p>
+    <p class="text-content">
+        AI tuo ostovalmiit asiakkaat <b>suoraan</b> sinun valmennukseesi <b>automaattisesti</b>.
+    </p>
+
+    <!-- Mitä opit -->
+    <p class="section-title">🎯 Mitä opit tässä maksuttomassa webinaarissa?</p>
+    <ul>
+        <li>💡 Miten <b>tekoäly tuo asiakkaita</b> valmennukseesi automaattisesti</li>
+        <li>📊 Miten <b>AI-optimointi</b> voi moninkertaistaa myyntisi</li>
+        <li>🤝 Miten <b>AI hoitaa myyntiprosessin</b> puolestasi</li>
+    </ul>
+
+    <!-- Kenelle tämä sopii -->
+    <p class="section-title">✅ Kenelle tämä sopii?</p>
+    <ul>
+        <li>🎤 Valmentajille & kouluttajille, jotka haluavat <b>enemmän asiakkaita</b></li>
+        <li>💼 Yrittäjille & asiantuntijoille, jotka haluavat <b>automaatiota</b></li>
+        <li>🔗 Kaikille, jotka haluavat <b>päästä eroon manuaalisesta myynnistä</b></li>
+    </ul>
+
+    <!-- Ilmoittautuminen -->
+    <div style="margin-top: 30px; margin-bottom: 30px;">
+        <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</a>
+    </div>
+
 </div>
 
 </body>
