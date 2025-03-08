@@ -12,10 +12,9 @@
             margin: 0;
             padding: 0;
             background: url('https://raw.githubusercontent.com/Mysteeriii/rantanen-valmennus/refs/heads/main/Taustakuva.jpg');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         .container {
             max-width: 600px;
@@ -25,12 +24,26 @@ background-attachment: fixed;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-      h1 {
-    font-size: 28px;
-    font-family: 'Playfair Display', serif;
-    color: #222;
-    font-weight: 700;
-}
+        h1 {
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+            color: #222;
+            font-weight: 700;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #222;
+            margin-top: 30px;
+        }
+        .text-content {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 550px;
+        }
         .webinar-info {
             font-size: 18px;
             margin-bottom: 20px;
@@ -45,28 +58,26 @@ background-attachment: fixed;
             border-radius: 5px;
             font-size: 16px;
         }
-    .cta-button {
-    display: inline-block;
-    background: linear-gradient(90deg, #ff416c, #ff4b2b);
-    color: #fff;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    padding: 15px 25px;
-    font-size: 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
-    width: auto;
-    min-width: 250px;
-}
-
-.cta-button:hover {
-    background: linear-gradient(90deg, #ff4b2b, #ff416c);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-}
-
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            padding: 15px 25px;
+            font-size: 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease-in-out;
+            width: auto;
+            min-width: 250px;
+        }
+        .cta-button:hover {
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
         .testimonials {
             font-size: 14px;
             color: #666;
@@ -74,6 +85,10 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
+
+<body>
+
+<!-- Logo -->
 <div style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
             text-align: center; z-index: 1000; background: white; 
             padding: 10px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
@@ -81,22 +96,42 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
          alt="Tulevaisuuden Minä -logo" 
          style="width: 100px; height: auto;">
 </div>
-    
+
 <div class="container" style="padding-top: 90px;">
     <h1>Haluatko 10 uutta asiakasta valmennukseesi tekoälyn avulla?</h1>
     <p class="webinar-info">Ilmainen webinaari: "Miten kasvattaa asiakasmäärää tekoälyn avulla?"</p>
-    
-<img src="https://raw.githubusercontent.com/Mysteeriii/rantanen-valmennus/main/WhatsApp%20Image%202025-02-10%20at%2021.42.33.jpeg" 
-     alt="Joonaksen valmennus" 
-     style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
-    <p><strong>Mitä opit tässä maksuttomassa webinaarissa?</strong></p>
+    <img src="https://raw.githubusercontent.com/Mysteeriii/rantanen-valmennus/main/WhatsApp%20Image%202025-02-10%20at%2021.42.33.jpeg" 
+         alt="Joonaksen valmennus" 
+         style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
+
+    <!-- Ongelma ja ratkaisu -->
+    <p class="section-title">📉 Perinteinen asiakashankinta on rikki</p>
+    <p class="text-content">
+        Mainosten tehot laskevat, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.
+    </p>
+    <p class="section-title">📈 Tekoäly muuttaa pelin täysin</p>
+    <p class="text-content">
+        AI tuo ostovalmiit asiakkaat suoraan sinun valmennukseesi automaattisesti.
+    </p>
+
+    <!-- Mitä opit -->
+    <p class="section-title">Mitä opit tässä maksuttomassa webinaarissa?</p>
     <ul style="text-align: left; display: inline-block;">
         <li>Miten tekoäly tuo asiakkaita valmennukseesi automaattisesti</li>
         <li>Miten AI-optimointi voi moninkertaistaa myyntisi</li>
         <li>Miten saat AI:n hoitamaan myyntiprosessin puolestasi</li>
     </ul>
 
+    <!-- Kenelle tämä sopii -->
+    <p class="section-title">Kenelle tämä sopii?</p>
+    <ul style="text-align: left; display: inline-block;">
+        <li>Valmentajille & kouluttajille, jotka haluavat enemmän asiakkaita ja skaalautuvaa myyntiä</li>
+        <li>Yrittäjille & asiantuntijoille, jotka haluavat automatisoida asiakashankintansa</li>
+        <li>Kaikille, jotka haluavat päästä eroon manuaalisesta myyntityöstä</li>
+    </ul>
+
+    <!-- Ilmoittautuminen -->
     <form>
         <div class="form-group">
             <input type="text" name="nimi" placeholder="Nimesi" required>
@@ -104,11 +139,12 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         <div class="form-group">
             <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
         </div>
-<div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
-  <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🔴Ilmoittaudu maksuttomaan webinaariin nyt!🔴</a>
-</div>
+        <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
+            <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🔴Ilmoittaudu maksuttomaan webinaariin nyt!🔴</a>
+        </div>
     </form>
 
+    <!-- Testimonials -->
     <div class="testimonials">
         <p>"Joonaksen valmennuksen avulla sain ensimmäiset 10 asiakastani!" – Anna K.</p>
         <p>"AI-strategia mullisti tapani tehdä myyntiä!" – Petri S.</p>
