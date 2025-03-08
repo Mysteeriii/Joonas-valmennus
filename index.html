@@ -38,19 +38,26 @@
             border-radius: 5px;
             font-size: 16px;
         }
-        .cta-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 12px;
-            font-size: 18px;
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
+     .cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
         .testimonials {
             font-size: 14px;
             color: #666;
@@ -82,7 +89,7 @@
         <div class="form-group">
             <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
         </div>
-        <button type="submit" class="cta-button">Ilmoittaudu maksuttomaan webinaariin nyt!</button>
+      <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🔴 Ilmoittaudu maksuttomaan webinaariin nyt! 🔴</a>
     </form>
 
     <div class="testimonials">
