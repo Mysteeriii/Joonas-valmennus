@@ -82,11 +82,6 @@
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
         }
-        .testimonials {
-            font-size: 14px;
-            color: #666;
-            margin-top: 20px;
-        }
         ul {
             text-align: left;
             display: inline-block;
@@ -119,6 +114,11 @@
          alt="Joonaksen valmennus" 
          style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
+    <p class="section-title">📉 <span class="highlight">Perinteinen asiakashankinta on rikki</span></p>
+    <p class="text-content">
+        Mainosten tehot <b>laskevat</b>, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.
+    </p>
+    
     <!-- Ilmoittautumislomake -->
     <form id="signup-form">
         <div class="form-group">
@@ -136,7 +136,7 @@
 <!-- Lomakkeen lähetyksen JavaScript -->
 <script>
     document.getElementById("signup-form").addEventListener("submit", function(e) {
-        e.preventDefault(); // Estetään oletustoiminta (sivun uudelleenlataus)
+        e.preventDefault();
 
         var nimi = document.getElementById("nimi").value;
         var sahkoposti = document.getElementById("sahkoposti").value;
@@ -155,7 +155,7 @@
             body: JSON.stringify(data)
         }).then(() => {
             alert("Ilmoittautuminen vastaanotettu!");
-            document.getElementById("signup-form").reset(); // Tyhjennetään lomake
+            document.getElementById("signup-form").reset();
         }).catch(error => console.error("Virhe:", error));
     });
 </script>
