@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fi">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,33 +41,20 @@
             color: #222;
         }
 
-        /* Värilliset otsikot */
-        .section-title {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .section-title.red {
-            color: #ff4b2b; /* Punainen */
-        }
-
-        .section-title.green {
-            color: #3D9970; /* Pehmeä vihreä */
-        }
-
         /* Tekstin tyyli */
         .webinar-info {
             font-size: 18px;
             margin-bottom: 20px;
         }
 
+        /* Ilmoittautumislomake */
         .form-group {
             margin-bottom: 15px;
         }
 
         input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
@@ -77,9 +63,8 @@
         /* CTA-painike */
         .cta-button {
             display: inline-block;
-            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            background: linear-gradient(90deg, #66BB6A, #4CAF50);
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             font-weight: bold;
             padding: 15px 25px;
             font-size: 20px;
@@ -87,20 +72,14 @@
             text-decoration: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease-in-out;
-            width: auto;
             min-width: 250px;
+            text-align: center;
         }
 
         .cta-button:hover {
-            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+            background: linear-gradient(90deg, #4CAF50, #388E3C);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
-        }
-
-        .testimonials {
-            font-size: 14px;
-            color: #666;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -119,34 +98,28 @@
 <!-- LÄNDÄRIN SISÄLTÖ -->
 <div class="container" style="padding-top: 90px;">
     
-    <h1>Haluatko 10 uutta asiakasta valmennukseesi tekoälyn avulla?</h1>
-    <p class="webinar-info">Ilmainen webinaari: "Miten kasvattaa asiakasmäärää tekoälyn avulla?"</p>
+    <h1>🌿 Kasvata valmennusbisnestäsi tekoälyn avulla!</h1>
+    <p class="webinar-info">Ilmainen webinaari: <strong>"Miten kasvattaa asiakasmäärää tekoälyn avulla?"</strong></p>
     
     <img src="https://raw.githubusercontent.com/Mysteeriii/rantanen-valmennus/main/WhatsApp%20Image%202025-02-10%20at%2021.42.33.jpeg" 
          alt="Joonaksen valmennus" 
          style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
-    <h2 class="section-title red">🚀 Perinteinen asiakashankinta on rikki</h2>
+    <h2>🚀 Perinteinen asiakashankinta on rikki</h2>
     <p>Mainosten tehot laskevat, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.</p>
 
-    <h2 class="section-title green">🤖 Tekoäly muuttaa pelin täysin</h2>
+    <h2>🤖 Tekoäly muuttaa pelin täysin</h2>
     <p>AI tuo ostovalmiit asiakkaat suoraan sinun valmennukseesi automaattisesti.</p>
 
-    <h2><strong>Mitä opit tässä maksuttomassa webinaarissa?</strong></h2>
+    <h2>🎯 Mitä opit tässä maksuttomassa webinaarissa?</h2>
     <ul style="text-align: left; display: inline-block;">
-        <li>Miten tekoäly tuo asiakkaita valmennukseesi automaattisesti</li>
-        <li>Miten AI-optimointi voi moninkertaistaa myyntisi</li>
-        <li>Miten saat AI:n hoitamaan myyntiprosessin puolestasi</li>
+        <li>💡 Miten <b>tekoäly tuo asiakkaita</b> valmennukseesi automaattisesti</li>
+        <li>📊 Miten <b>AI-optimointi</b> voi moninkertaistaa myyntisi</li>
+        <li>🤝 Miten <b>AI hoitaa myyntiprosessin</b> puolestasi</li>
     </ul>
 
-    <h2><strong>Kenelle tämä sopii?</strong></h2>
-    <ul style="text-align: left; display: inline-block;">
-        <li>Valmentajille & kouluttajille, jotka haluavat enemmän asiakkaita ja skaalautuvaa myyntiä</li>
-        <li>Yrittäjille & asiantuntijoille, jotka haluavat automatisoida asiakashankintansa</li>
-        <li>Kaikille, jotka haluavat päästä eroon manuaalisesta myyntityöstä</li>
-    </ul>
-
-    <form>
+    <!-- ILMOITTAUTUMISLOMAKE -->
+    <form id="signup-form">
         <div class="form-group">
             <input type="text" name="nimi" placeholder="Nimesi" required>
         </div>
@@ -154,14 +127,35 @@
             <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
         </div>
         <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
-            <a href="https://esimerkki.com/ilmoittautuminen" class="cta-button">🔴 Ilmoittaudu maksuttomaan webinaariin nyt! 🔴</a>
+            <button type="submit" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</button>
         </div>
     </form>
 
     <p style="font-size: 12px; color: #888;">Lisätietoa? Ota yhteyttä: 
         <a href="mailto:info@joonaksenvalmennus.fi">info@joonaksenvalmennus.fi</a>
     </p>
+
 </div>
+
+<!-- JavaScript Google Apps Script -integraatiota varten -->
+<script>
+document.getElementById("signup-form").addEventListener("submit", function(event){
+    event.preventDefault();
+    
+    let formData = new FormData(this);
+
+    fetch("https://script.google.com/macros/s/AKfycbzmfCH9L1loKoapG9nXjli5Qyxnl6YF7t40ooJTJe011MHV2t7Je1p5t_oqNcU7T6J4/exec", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert("Ilmoittautuminen onnistui!");
+        document.getElementById("signup-form").reset();
+    })
+    .catch(error => console.error("Error:", error));
+});
+</script>
 
 </body>
 </html>
