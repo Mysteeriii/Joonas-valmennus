@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasvata valmennusbisnestäsi tekoälyn avulla!</title>
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    
     <style>
-        /* Yleiset tyylit */
         body {
             font-family: 'Poppins', sans-serif;
             text-align: center;
@@ -19,39 +15,44 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            color: #333;
         }
-
         .container {
             max-width: 600px;
             margin: 50px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-
-        /* Otsikot */
-        h1, h2 {
+        h1, .section-title {
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-        }
-
-        h1 {
             font-size: 28px;
-            color: #222;
+            font-weight: 700;
+            color: #2E7D32;
+            margin-bottom: 20px;
         }
-
-        /* Tekstin tyyli */
         .webinar-info {
             font-size: 18px;
             margin-bottom: 20px;
+            color: #388E3C;
+            font-weight: bold;
         }
-
-        /* Ilmoittautumislomake */
+        .text-content {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 550px;
+        }
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
         .form-group {
             margin-bottom: 15px;
         }
-
         input {
             width: 100%;
             padding: 12px;
@@ -59,12 +60,11 @@
             border-radius: 5px;
             font-size: 16px;
         }
-
-        /* CTA-painike */
         .cta-button {
             display: inline-block;
             background: linear-gradient(90deg, #66BB6A, #4CAF50);
             color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             font-weight: bold;
             padding: 15px 25px;
             font-size: 20px;
@@ -72,21 +72,32 @@
             text-decoration: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease-in-out;
+            width: auto;
             min-width: 250px;
-            text-align: center;
+            border: none;
+            cursor: pointer;
         }
-
         .cta-button:hover {
             background: linear-gradient(90deg, #4CAF50, #388E3C);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            padding: 0;
+            font-size: 16px;
+            color: #444;
+        }
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
+<!-- Logo -->
 <div style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
             text-align: center; z-index: 1000; background: white; 
             padding: 10px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
@@ -95,66 +106,74 @@
          style="width: 100px; height: auto;">
 </div>
 
-<!-- LÄNDÄRIN SISÄLTÖ -->
 <div class="container" style="padding-top: 90px;">
-    
     <h1>🌿 Kasvata valmennusbisnestäsi tekoälyn avulla!</h1>
-    <p class="webinar-info">Ilmainen webinaari: <strong>"Miten kasvattaa asiakasmäärää tekoälyn avulla?"</strong></p>
-    
+    <p class="webinar-info">Ilmainen webinaari: <span class="highlight">"Miten kasvattaa asiakasmäärää tekoälyn avulla?"</span></p>
+
     <img src="https://raw.githubusercontent.com/Mysteeriii/rantanen-valmennus/main/WhatsApp%20Image%202025-02-10%20at%2021.42.33.jpeg" 
          alt="Joonaksen valmennus" 
          style="width:100%; max-width:500px; border-radius:8px; margin-bottom: 20px;">
 
-    <h2>🚀 Perinteinen asiakashankinta on rikki</h2>
-    <p>Mainosten tehot laskevat, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.</p>
+    <!-- Ongelma ja ratkaisu -->
+    <p class="section-title">📉 <span class="highlight">Perinteinen asiakashankinta on rikki</span></p>
+    <p class="text-content">
+        Mainosten tehot <b>laskevat</b>, kylmäsoitot eivät enää toimi, ja manuaalinen myyntityö vie valtavasti aikaa.
+    </p>
+    <p class="section-title">🤖 <span class="highlight">Tekoäly muuttaa pelin täysin</span></p>
+    <p class="text-content">
+        AI tuo ostovalmiit asiakkaat <b>suoraan</b> sinun valmennukseesi <b>automaattisesti</b>.
+    </p>
 
-    <h2>🤖 Tekoäly muuttaa pelin täysin</h2>
-    <p>AI tuo ostovalmiit asiakkaat suoraan sinun valmennukseesi automaattisesti.</p>
-
-    <h2>🎯 Mitä opit tässä maksuttomassa webinaarissa?</h2>
-    <ul style="text-align: left; display: inline-block;">
+    <!-- Mitä opit -->
+    <p class="section-title">🎯 Mitä opit tässä maksuttomassa webinaarissa?</p>
+    <ul>
         <li>💡 Miten <b>tekoäly tuo asiakkaita</b> valmennukseesi automaattisesti</li>
         <li>📊 Miten <b>AI-optimointi</b> voi moninkertaistaa myyntisi</li>
         <li>🤝 Miten <b>AI hoitaa myyntiprosessin</b> puolestasi</li>
     </ul>
 
-    <!-- ILMOITTAUTUMISLOMAKE -->
+    <!-- Kenelle tämä sopii -->
+    <p class="section-title">✅ Kenelle tämä sopii?</p>
+    <ul>
+        <li>🎤 Valmentajille & kouluttajille, jotka haluavat <b>enemmän asiakkaita</b></li>
+        <li>💼 Yrittäjille & asiantuntijoille, jotka haluavat <b>automaatiota</b></li>
+        <li>🔗 Kaikille, jotka haluavat <b>päästä eroon manuaalisesta myynnistä</b></li>
+    </ul>
+
+    <!-- Ilmoittautumislomake -->
     <form id="signup-form">
         <div class="form-group">
-            <input type="text" name="nimi" placeholder="Nimesi" required>
+            <input type="text" name="nimi" id="nimi" placeholder="Nimesi" required>
         </div>
         <div class="form-group">
-            <input type="email" name="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
+            <input type="email" name="sahkoposti" id="sahkoposti" placeholder="Sähköpostiosoitteesi" required>
         </div>
         <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
             <button type="submit" class="cta-button">🌱 Ilmoittaudu maksuttomaan webinaariin nyt! 🌱</button>
         </div>
     </form>
-
-    <p style="font-size: 12px; color: #888;">Lisätietoa? Ota yhteyttä: 
-        <a href="mailto:info@joonaksenvalmennus.fi">info@joonaksenvalmennus.fi</a>
-    </p>
-
 </div>
 
-<!-- JavaScript Google Apps Script -integraatiota varten -->
+<!-- Lomakkeen lähetyksen JavaScript -->
 <script>
-document.getElementById("signup-form").addEventListener("submit", function(event){
-    event.preventDefault();
-    
-    let formData = new FormData(this);
+    document.getElementById("signup-form").addEventListener("submit", function(e) {
+        e.preventDefault();
 
-    fetch("https://script.google.com/macros/s/AKfycbzmfCH9L1loKoapG9nXjli5Qyxnl6YF7t40ooJTJe011MHV2t7Je1p5t_oqNcU7T6J4/exec", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert("Ilmoittautuminen onnistui!");
-        document.getElementById("signup-form").reset();
-    })
-    .catch(error => console.error("Error:", error));
-});
+        var nimi = document.getElementById("nimi").value;
+        var sahkoposti = document.getElementById("sahkoposti").value;
+
+        var data = { nimi: nimi, sahkoposti: sahkoposti };
+
+        fetch("https://script.google.com/macros/s/AKfycbzmfCH9L1loKoapG9nXjli5Qyxnl6YF7t40ooJTJe011MHV2t7Je1p5t_oqNcU7T6J4/exec", {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        }).then(() => {
+            alert("Ilmoittautuminen vastaanotettu!");
+            document.getElementById("signup-form").reset();
+        });
+    });
 </script>
 
 </body>
